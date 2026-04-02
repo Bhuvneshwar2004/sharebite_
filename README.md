@@ -2,7 +2,7 @@
 
 > **Zero Waste. Zero Hunger.** A full-stack web application designed to redistribute surplus food from local businesses to communities in need, tackling the UN's Sustainable Development Goal 12 (Responsible Consumption and Production).
 
-![ShareBite Banner](https://via.placeholder.com/1000x400?text=Insert+Your+Project+Screenshot+Here) *(Note: Replace this link with an actual screenshot of your app!)*
+
 
 ## 📖 About the Project
 
