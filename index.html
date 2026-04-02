@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareBite | SDG 12 Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div>
+                <h1><span class="logo-icon">🍲</span> ShareBite</h1>
+                <p class="tagline">Zero Waste. Zero Hunger.</p>
+            </div>
+            <a href="auth.html" style="color: white; text-decoration: none; font-weight: bold; background: rgba(0,0,0,0.2); padding: 0.5rem 1rem; border-radius: 8px;">Login / Register</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section fade-in">
+            <div class="section-header">
+                <h2>Give Surplus Food</h2>
+                <p>Have extra food? List it here to help the community.</p>
+            </div>
+            <form id="donation-form">
+                <div class="input-group">
+                    <label for="donorName">Donor / Restaurant Name</label>
+                    <input type="text" id="donorName" placeholder="e.g. The Daily Bakery" required>
+                </div>
+                <div class="input-group">
+                    <label for="foodItem">What are you donating?</label>
+                    <input type="text" id="foodItem" placeholder="e.g. 10 Loaves of Bread" required>
+                </div>
+                <div class="input-group">
+                    <label for="quantity">Quantity or Weight</label>
+                    <input type="text" id="quantity" placeholder="e.g. 5 kg" required>
+                </div>
+                <div class="input-group">
+                    <label for="pickupLocation">Pickup Address</label>
+                    <input type="text" id="pickupLocation" placeholder="123 Main Street" required>
+                </div>
+                <button type="submit" class="btn-primary">Post Donation</button>
+            </form>
+        </section>
+
+        <section class="dashboard-section fade-in delay">
+            <div class="section-header">
+                <h2>Available Donations</h2>
+                <p>Live feed of surplus food ready for pickup.</p>
+            </div>
+            <div id="food-list" class="food-grid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made with 💚 by bs for SDG</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
